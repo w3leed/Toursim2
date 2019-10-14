@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/itemCategories"
+        android:icon="@drawable/ic_categories"
+        android:title="الأماكــن" />
+    <item
+        android:id="@+id/itemGovs"
+        android:icon="@drawable/ic_cities"
+        android:title="الرحـلات" />
+    <item
+        android:id="@+id/itemCorporations"
+        android:icon="@drawable/ic_corporations"
+        android:title="المحافظات" />
+    <item
+        android:id="@+id/itemTrips"
+        android:icon="@drawable/ic_trips"
+        android:title="الشركات" />
+
+    <item
+        android:id="@+id/itemInterests"
+        android:icon="@drawable/ic_interests"
+        android:title="المفضلة" />
+    <item
+        android:id="@+id/itemSettings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="الإعدادت" />
+    <item
+        android:id="@+id/itemLogout"
+        android:icon="@drawable/ic_logout"
+        android:title="تسـجيل الخروج" />
+
+</menu>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9f9f9"
+        android:layoutDirection="ltr"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradientbackground"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <ImageButton
+                        android:id="@+id/img_btn_side_menu"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:pointerIcon="all_scroll"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/menu"
+                        android:tint="#fff" />
+
+                    <ImageView
+                        android:id="@+id/img_logo"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:pointerIcon="all_scroll"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/contact" />
+
+                    <ImageButton
+                        android:id="@+id/img_btn_search"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="15dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:pointerIcon="all_scroll"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_search_black_24dp"
+                        android:tint="#fff" />
+
+                </RelativeLayout>
+
+                <GridLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="1"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        android:layout_marginTop="0dp"
+                        app:cardBackgroundColor="#ffffff"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp">
+
+                            <Button
+                                android:id="@+id/btnAllGovs"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="0dp"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/tajawal_bold"
+                                android:text="المدن"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18dp" />
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerInParent="true"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/dir" />
+
+                            <Button
+                                android:id="@+id/btnAllTrips"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="0dp"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/tajawal_bold"
+                                android:text="الرحلات"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="18dp" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fram_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
